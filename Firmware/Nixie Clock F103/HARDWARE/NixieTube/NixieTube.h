@@ -1,0 +1,50 @@
+#ifndef _NixieTube_H
+#define _NixieTube_H
+#include "main.h"
+void M1_0(void);
+void M1_1(void);
+void M1_2(void);
+void M1_3(void);
+void M1_4(void);
+void M1_5(void);
+void M1_6(void);
+void M1_7(void);
+void M1_8(void);
+void M1_9(void);
+void M2_0(void);
+void M2_1(void);
+void M2_2(void);
+void M2_3(void);
+void M2_4(void);
+void M2_5(void);
+void M2_6(void);
+void M2_7(void);
+void M2_8(void);
+void M2_9(void);
+void H1_0(void);
+void H1_1(void);
+void H1_2(void);
+void H1_3(void);
+void H1_4(void);
+void H1_5(void);
+void H1_6(void);
+void H1_7(void);
+void H1_8(void);
+void H1_9(void);
+void H2_0(void);
+void H2_1(void);
+void H2_2(void);
+void H2_3(void);
+void H2_4(void);
+void H2_5(void);
+void H2_6(void);
+void H2_7(void);
+void H2_8(void);
+void H2_9(void);
+void Test(void);
+void M1_Show(uint8_t x);
+void M2_Show(uint8_t x);
+void H1_Show(uint8_t x);
+void H2_Show(uint8_t x);
+void ShowTime(uint8_t nh,uint8_t nm);
+#endif
