@@ -39,7 +39,7 @@ void setup() {
   pinMode(15,OUTPUT);digitalWrite(15,LOW);//D8-->GND
   //新模块上电需要设置一次当前时间，
   //下载完成后需屏蔽此函数再次下载，否则每次上电都会初始化时间数据
-  initRTCTime();
+  //initRTCTime();
 
 }
 int judge(){
