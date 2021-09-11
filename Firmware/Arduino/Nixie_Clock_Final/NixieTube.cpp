@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include "NixieTube.h"
+#define mytim 100
 int M1A=2,M1B=3,M1C=4,M1D=5;
 int M2A=6,M2B=7,M2C=8,M2D=9;
 int H1A=11,H1B=12,H1C=13;
@@ -309,4 +310,51 @@ void H2_Show(int x){
 }
 void ShowTime(int H2,int H1,int M2,int M1){
   M1_Show(M1);M2_Show(M2);H1_Show(H1);H2_Show(H2);
+}
+void ROLL(int h2,int h1,int m2,int m1){
+  for(int ii=1;ii<=4;++ii){
+      for(int i=0;i<=9;++i){
+        M1_Show(i);M2_Show(i);H1_Show(i);H2_Show(i);delay(mytim);
+      }
+  }
+  int flag=0;
+  for(int i=0;i<=9;++i){
+      if(flag==0){
+        M1_Show(i);M2_Show(i);H1_Show(i);H2_Show(i);delay(mytim);
+      }
+      else{
+        M1_Show(i);M2_Show(i);H1_Show(i);delay(mytim);
+      }
+      if(i==h2)flag=1;
+  }
+  flag=0;
+  for(int i=0;i<=9;++i){
+      if(flag==0){
+        M1_Show(i);M2_Show(i);H1_Show(i);delay(mytim);
+      }
+      else{
+        M1_Show(i);M2_Show(i);delay(mytim);
+      }
+      if(i==h1)flag=1;
+  }
+  flag=0;
+  for(int i=0;i<=9;++i){
+      if(flag==0){
+        M1_Show(i);M2_Show(i);delay(mytim);
+      }
+      else{
+        M1_Show(i);delay(mytim);
+      }
+      if(i==m2)flag=1;
+  }
+  flag==0;
+  for(int i=0;i<=9;++i){
+      if(flag==0){
+        M1_Show(i);delay(mytim);
+      }
+      else{
+        return;
+      }
+      if(i==m1)flag=1;
+  }
 }

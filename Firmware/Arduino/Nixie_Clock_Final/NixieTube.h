@@ -47,4 +47,5 @@ void M2_Show(int x);
 void H1_Show(int x);
 void H2_Show(int x);
 void ShowTime(int H2,int H1,int M2,int M1);
+void ROLL(int h2,int h1,int m2,int m1);
 #endif

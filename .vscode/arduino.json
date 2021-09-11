@@ -1,0 +1,6 @@
+{
+    "configuration": "cpu=atmega328",
+    "board": "arduino:avr:nano",
+    "port": "COM3",
+    "sketch": "Firmware\\Arduino\\Nixie_Clock_Final\\Nixie_Clock_Final.ino"
+}
